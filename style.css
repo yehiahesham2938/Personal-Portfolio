@@ -22,6 +22,63 @@ header, footer { padding: 1rem 1.25rem; }
 header { background: #fff; border-bottom: 1px solid var(--border); }
 footer { background: var(--bg-dark); color: #e5e7eb; }
 
+.hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+  padding: 3rem 1.25rem;
+  color: #ffffff;
+  background-image: linear-gradient(rgba(15,23,42,0.55), rgba(15,23,42,0.55)), url('assets/images/hero.jpg');
+  background-size: cover;  
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero__content { text-align: center; }
+.hero h1 { font-size: 60px; margin-bottom: -32px; }
+.hero__subtitle { font-size: 25px; margin-bottom: 5px; color: #e2e8f0; }
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.btn-primary { background: var(--secondary); color: #081018; transition: background-color 160ms, color 160ms; }
+.btn-primary:hover, .btn-primary:focus-visible { background: #0ea5a6; color: #020617; }
+
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+.card {
+  display: block;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: #fff;
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 160ms, transform 160ms;
+}
+.card:hover, .card:focus-visible { border-color: var(--secondary); transform: translateY(-2px); }
+
+@media (max-width: 900px) {
+  .hero { min-height: 50vh; padding: 2.5rem 1rem; }
+  .hero h1 { font-size: 2rem; }
+  .quick-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .hero { min-height: 45vh; padding: 2rem 1rem; }
+  .hero h1 { font-size: 1.75rem; }
+  .quick-links { grid-template-columns: 1fr; }
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -48,7 +105,7 @@ nav a:focus-visible {
 
 h1 { margin: 0; font-size: 1.5rem; }
 h2 { color: var(--text); }
-p { color: var(--text-muted); }
+p { color: var(--text); }
 
 .footer-inner {
   display: flex;
