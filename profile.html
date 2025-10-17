@@ -21,8 +21,41 @@
     </header>
     <main>
       <section>
-        <h2>Profile Details</h2>
-        <p>...</p>
+        <h2>Profile</h2>
+        <div class="profile-header">
+          <div class="profile-avatar"></div>
+          <div class="profile-info">
+            <h3 class="profile-name">Yehia Hesham</h3>
+            <p class="profile-bio"> Computer science student with a strong foundation in software development, distributed systems, and full-stack
+              technologies. Demonstrated expertise in building scalable applications using modern programming languages and
+              frameworks</p>
+            <p><a class="btn btn-primary" href="edit-profile.html">Edit Profile</a></p>
+          </div>
+        </div>
+
+        <div class="recommendations" >
+          <h3>Recommendations</h3>
+          <div class="recommendations-list">
+            <p class="placeholder">No recommendations yet.</p>
+          </div>
+        </div>
+
+        <div class="recommendation-form-wrap" >
+          <h3>Leave a Recommendation</h3>
+          <form class="recommendation-form" action="#">
+            <div class="form-row form-row--full">
+              <label for="rec-message">Your Recommendation</label>
+              <textarea id="rec-message" name="message" rows="5" placeholder="Write your recommendation"  ></textarea>
+            </div>
+            <div class="form-row">
+              <label for="rec-image">Attach an image (optional)</label>
+              <input type="file" />
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-submit" type="submit">Submit Recommendation</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer>

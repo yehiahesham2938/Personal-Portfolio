@@ -17,15 +17,15 @@ body {
   line-height: 1.5;
 }
 
-main { padding: 1.25rem; }
-header, footer { padding: 1rem 1.25rem; }
+main { padding: 20px; }
+header, footer { padding: 16px 20px; }
 header { background: #fff; border-bottom: 1px solid var(--border); }
 footer { background: var(--bg-dark); color: #e5e7eb; }
 
 .about {
   display: grid;
-  gap: 1.25rem;
-  padding: 1.25rem;
+  gap: 20px;
+  padding: 20px;
 }
 .table-wrap { overflow-x: auto; }
 .skills-table {
@@ -35,23 +35,23 @@ footer { background: var(--bg-dark); color: #e5e7eb; }
 .skills-table th,
 .skills-table td {
   border: 1px solid var(--border);
-  padding: 0.75rem;
+  padding: 12px;
   text-align: left;
   background: #fff;
 }
-.experience-item { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 1rem; }
+.experience-item { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
 
-.projects { padding: 1.25rem; }
+.projects { padding: 20px; }
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 16px;
 }
 .project-card {
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 16px;
   transition: transform 200ms, box-shadow 200ms;
 }
 .project-card:hover { transform: scale(1.02); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
@@ -69,7 +69,7 @@ footer { background: var(--bg-dark); color: #e5e7eb; }
   display: grid;
   place-items: center;
   min-height: 60vh;
-  padding: 3rem 1.25rem;
+  padding: 48px 20px;
   color: #ffffff;
   background-image: linear-gradient(rgba(15,23,42,0.55), rgba(15,23,42,0.55)), url('assets/images/hero.jpg');
   background-size: cover;  
@@ -93,13 +93,13 @@ footer { background: var(--bg-dark); color: #e5e7eb; }
 .quick-links {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  padding: 1.25rem;
+  gap: 16px;
+  padding: 20px;
 }
 
 .card {
   display: block;
-  padding: 1rem;
+  padding: 16px;
   border: 1px solid var(--border);
   border-radius: 11px;
   background: #fff;
@@ -110,13 +110,13 @@ footer { background: var(--bg-dark); color: #e5e7eb; }
 .card:hover, .card:focus-visible { border-color: var(--secondary); transform: translateY(-2px); }
 
 @media (max-width: 900px) {
-  .hero { min-height: 50vh; padding: 2.5rem 1rem; }
+  .hero { min-height: 50vh; padding: 40px 16px; }
   .hero h1 { font-size: 2rem; }
   .quick-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 640px) {
-  .hero { min-height: 45vh; padding: 2rem 1rem; }
+  .hero { min-height: 45vh; padding: 32px 16px; }
   .hero h1 { font-size: 1.75rem; }
   .quick-links { grid-template-columns: 1fr; }
 }
@@ -145,9 +145,63 @@ nav a:focus-visible {
   color: #fff;
 }
 
-h1 { margin: 0; font-size: 1.5rem; }
+h1 { margin: 0; font-size: 24px; }
 h2 { color: var(--text); }
 p { color: var(--text); }
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 9999px;
+  background-image: url('assets/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #cbd5e1;
+  flex: 0 0 auto;
+} 
+
+.recommendations {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.recommendations-list .placeholder { 
+  color: #64748b; 
+}
+
+.recommendation-form-wrap {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.recommendation-form { 
+  display: grid; 
+  gap: 12px;
+ }
+.form-row { 
+  display: grid;
+   gap: 8px;
+   }
+   
+.form-actions {
+   display: flex;
+    justify-content: flex-end;
+   }
 
 .contact-form {
   display: grid;
@@ -205,7 +259,7 @@ p { color: var(--text); }
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem 1rem;
+  gap: 12px 16px;
 }
 .footer-note {
   margin: 0;
