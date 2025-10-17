@@ -22,7 +22,31 @@
     <main>
       <section>
         <h2>Get in Touch</h2>
-        <p>...</p>
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" inputmode="text" autocomplete="name" placeholder="Your full name (Ex. Yehia Hesham)" />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com (Ex. yehia@gmail.com)" />
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" inputmode="text" placeholder="How can I help?"  />
+          </div>
+
+          <div class="form-row form-row--full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-submit" type="submit">Send Message</button>
+          </div>
+        </form>
       </section>
     </main>
     <footer>
