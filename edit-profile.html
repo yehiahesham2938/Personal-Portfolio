@@ -21,8 +21,93 @@
     </header>
     <main>
       <section>
-        <h2>edit profile</h2>
-        <p>...</p>
+        <h2>Edit Profile</h2>
+
+        <div class="edit-page">
+          <form class="edit-profile-form" action="#">
+            <div class="form-row">
+              <label for="display-name">Display Name</label>
+              <input type="text" required />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email (for contact section)</label>
+              <input type="email" />
+            </div>
+
+            <div class="form-row">
+              <label for="tagline">Tagline / One-line Title</label>
+              <input  type="text" placeholder="Software Engineer" />
+            </div>
+
+            <div class="form-row">
+              <label for="bio">About Me / Bio</label>
+              <textarea  rows="5" placeholder="Write a short bio"></textarea>
+            </div>
+
+            <div class="form-row">
+              <label for="website">Personal Website or Social Link</label>
+              <input id="website" name="website" type="url" placeholder="https://example.com" />
+            </div>
+
+            <div class="form-row">
+              <label for="skill">How confident are you in your main skill?</label>
+              <input type="range" min="1" max="15" />
+            </div>
+
+            <div class="form-row">
+              <label for="birthday">Birthday</label>
+              <input id="birthday" name="birthday" type="date" />
+            </div>
+
+            <div class="form-row">
+              <label >Choose Profile Theme Color</label>
+              <div class="color-input-row">
+                <input type="color" value="#14b8a6" />
+                <span class="color-preview" ></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="avatar">Profile Picture Upload</label>
+              <input type="file" />
+            </div>
+
+            <div class="form-row">
+              <label for="cover">Upload Cover Image / Banner</label>
+              <input type="file" />
+            </div>
+
+            <div class="form-row">
+              <label for="introVideo">Upload Intro Video (optional)</label>
+              <input type="file"  />
+            </div>
+
+            <div class="form-row">
+              <label for="introAudio">Upload Intro Audio (optional)</label>
+              <input   type="file" />
+            </div>
+
+            <div class="form-row">
+              <label for="quote">Favorite Quote / Motto</label>
+              <input type="text" />
+            </div>
+
+            <div class="form-row">
+              <label >Preferred Contact Method</label>
+              <select >
+                <option>Email</option>
+                <option>LinkedIn</option>
+                <option>GitHub</option>
+                <option  >Other</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-submit" type="submit">Save Changes</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
@@ -36,6 +121,5 @@
       </div>
     </footer>
   </body>
-</html>
-
+  </html>
 

@@ -166,8 +166,7 @@ p { color: var(--text); }
   background-image: url('assets/images/hero.jpg');
   background-size: cover;
   background-position: center;
-  border: 2px solid #cbd5e1;
-  flex: 0 0 auto;
+  flex: 0 0 auto ;
 } 
 
 .recommendations {
@@ -292,4 +291,34 @@ p { color: var(--text); }
   background: rgba(255, 255, 255, 0.12);
   color: #ffffff;
 }
+
+.edit-profile-form {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  max-width: 600px;
+} 
+.edit-profile-form input,
+.edit-profile-form textarea,
+.edit-profile-form select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+}
+.edit-profile-form input:focus,
+.edit-profile-form textarea:focus,
+
+.edit-profile-form input[type="radio"] { width: auto; margin-right: 8px; }
+.edit-profile-form .range-value { font-weight: 600; color: var(--secondary); text-align: center; margin-top: 8px; }
+.edit-profile-form .form-actions { display: flex; gap: 16px; justify-content: flex-end; margin-top: 20px; }
+.color-input-row { display: flex; align-items: center; gap: 12px; }
+.color-input-row .color-preview {
+   width: 28px;
+    height: 28px;
+       background: #ad1e1e;
+   }
 
